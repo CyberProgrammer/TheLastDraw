@@ -22,7 +22,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" type="text/css" href="styles/navigation.css">
 		<link rel="stylesheet" type="text/css" href="styles/account.css">
-		
+		<title>The Last Draw - Account</title>
 	</head>
 
 	<body>
