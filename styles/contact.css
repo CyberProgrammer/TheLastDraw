@@ -1,0 +1,211 @@
+@font-face {
+    font-family: 'Libre Caslon Text';
+    font-display: block;
+    src: url('fonts/WOFF/librecaslontext-regular.woff2') format('woff2'),
+         url('fonts/WOFF/librecaslontext-regular.woff') format('woff');
+    src: local('Libre Caslon Text'), url('fonts/WOFF/librecaslontext-regular.woff') format('woff'), url('fonts/WOFF/librecaslontext-regular.woff2') format('woff2') ;
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@media only screen and (max-width: 650px) {
+	#nav-bar{
+		top: 0;
+		border: none;	
+	}
+	#content{
+		width: 100% !important;
+	}
+
+	#content p {
+		width: 80%;
+	}
+
+	.button_list li{
+		margin: 0px 5px 0px 5px;
+	}
+
+	.form_selection_btn{
+		width: 100% !important;
+		margin-left: 0px !important;
+	}
+}
+
+@media only screen and (max-width: 1350px) {
+	.sticky{
+		margin: -1px 0px 0px 0px;
+	}
+
+	#topbar{
+		display: none;
+	}
+
+	#content p {
+		width: 80%;
+	}
+}
+
+html, body, main, footer{
+	font-size: 0.9em !important;
+	font-family: 'Libre Caslon Text', serif;
+	margin: 0;
+	padding: 0;
+	min-width: 100%;
+}
+
+html{
+	height: 100%;
+}
+
+body{
+	min-height: 100%;
+}
+
+main{
+	display: flex;
+	justify-content: center;
+	min-height: 100vh;
+	background-image: url(../images/smoke.jpg);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#content{
+	font-size: 1em;
+	background-color: white;
+	width: 80%;
+	white-space: pre-line;
+}
+
+#content div{
+	width: 100%;
+}
+
+.row p{
+	color: black;
+}
+
+.button_list{
+	display: flex;
+	flex-direction: row;
+	list-style: none;
+	justify-content: center;
+	align-items: center;
+	margin: auto;
+	padding: 0px;
+}
+
+.button_list li{
+	width: 25%;
+}
+
+.form_selection_btn{
+	color: white;
+	background-color: #000000;
+	border-radius: 10px;
+	width: 50%;
+	margin-left: 25%;
+}
+
+.content-title{
+	margin-top: 15%;
+	text-align: center;
+}
+
+#product_form{
+	width: 100%;
+	text-align: center;
+}
+
+#product_form input{
+	width: 40%;
+	margin-bottom: 5%;
+}
+
+#product_form label{
+	margin-bottom: 5%;
+}
+
+#product_form textarea{
+	width: 40%;
+	min-height: 200px;
+}
+
+#product_form button{
+	color: white;
+	background-color: #000000;
+	border-radius: 10px;
+	margin-bottom: 2%;
+	width: 10%;
+}
+
+#sales_form{
+	width: 100%;
+	text-align: center;
+}
+
+#sales_form input{
+	width: 40%;
+	margin-bottom: 5%;
+}
+
+#sales_form label{
+	margin-bottom: 5%;
+}
+
+#sales_form textarea{
+	width: 40%;
+	min-height: 200px;
+}
+
+#sales_form button{
+	color: white;
+	background-color: #000000;
+	border-radius: 10px;
+	margin-bottom: 2%;
+	width: 10%;
+}
+
+#other_form{
+	width: 100%;
+	text-align: center;
+}
+
+#other_form input{
+	width: 40%;
+	margin-bottom: 5%;
+}
+
+#other_form label{
+	margin-bottom: 5%;
+}
+
+#other_form textarea{
+	width: 40%;
+	min-height: 200px;
+}
+
+#other_form button{
+	color: white;
+	background-color: #000000;
+	border-radius: 10px;
+	margin-bottom: 2%;
+	width: 10%;
+}
+
+.connect-true{
+	text-align: center;
+	color: green;
+}
+
+.connect-false{
+	text-align: center;
+	color: red;
+}
+
+#contact-form-container h3{
+	margin-top: 5%;
+	text-align: center;
+}

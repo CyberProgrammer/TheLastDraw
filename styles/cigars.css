@@ -1,0 +1,197 @@
+@font-face {
+    font-family: 'Libre Caslon Text';
+    font-display: block;
+    src: url('fonts/WOFF/librecaslontext-regular.woff2') format('woff2'),
+         url('fonts/WOFF/librecaslontext-regular.woff') format('woff');
+    src: local('Libre Caslon Text'), url('fonts/WOFF/librecaslontext-regular.woff') format('woff'), url('fonts/WOFF/librecaslontext-regular.woff2') format('woff2') ;
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@media only screen and (max-width: 650px) {
+	#nav-bar{
+		top: 0;
+		border: none;	
+	}
+
+	.row-1{
+		width: 90% !important;
+	}
+
+	#content{
+		width: 100% !important;
+	}
+
+	#content p {
+		width: 100% !important;
+	}
+}
+
+@media only screen and (max-width: 1000px) {
+	.cigar-row, .cigar-row-last{
+		height: 150px !important;
+	}
+}
+
+@media only screen and (max-width: 1350px) {
+	.sticky{
+		margin: -1px 0px 0px 0px;
+	}
+
+	#topbar{
+		display: none;
+	}
+
+	#content p {
+		width: 80%;
+	}
+
+	.list-row{
+		min-width: 180px !important;
+	}
+}
+
+
+html, body, main, footer{
+	font-size: 0.9em !important;
+	font-family: 'Libre Caslon Text', serif;
+	margin: 0;
+	padding: 0;
+	min-width: 100%;
+}
+
+html{
+	height: 100%;
+}
+
+body{
+	min-height: 100%;
+}
+
+main{
+	display: flex;
+	justify-content: center;
+	min-height: 100vh;
+	background-image: url(../images/smoke.jpg);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#content{
+	font-size: 1em;
+	background-color: white;
+	width: 80%;
+	white-space: pre-line;
+}
+
+#content div{
+	width: 90%;
+}
+
+#content p{
+	font-size: 1.25em;
+}
+
+/* Page specific content*/
+
+#content .cigar-row{
+	display: flex;
+	width: 100%;
+    flex-wrap: wrap;
+    align-content: center;
+    white-space: normal;
+    height: 235px;
+    float: left;
+    clear: none;
+    margin: 0;
+    padding: 0;
+}
+
+.row-1{
+	width: 50%;
+	text-align: center;
+	margin: auto;
+	margin-top: 10%;
+	margin-bottom: 10%;
+}
+
+.row-1 p{
+	width: 50%;
+	margin: auto;
+}
+
+.cigar-row-content ul{
+	list-style: none;
+}
+
+.cigar-row{
+	background-color: lightsteelblue;
+}
+.cigar-row:nth-child(odd){
+	background-color: lightblue;
+}
+
+.list-row{
+	display: flex;
+    align-items: center;
+    width: 20%;
+	height: 35%;
+	text-align: center;
+	color: white;
+	background-color: black;
+}
+
+.list-row li{
+	margin-right: 5%;
+}
+
+.cigar-row-last{
+	display: flex;
+	width: 100% !important;
+    flex-wrap: wrap;
+    align-content: center;
+    white-space: normal;
+    height: 235px;
+    float: left;
+    clear: none;
+    margin: 0;
+    padding: 0;
+	background-color: lightblue;
+	margin-bottom: 15%;
+}
+
+
+#product-royal-reserva{
+	background-image: url(../images/products/royal_reserva.jpg);
+	background-size: cover;
+}
+
+#product-platinum-privilege{
+	background-image: url(../images/products/platinum_priviledge.jpg);
+	background-size: cover;
+}
+
+#product-imperial-heritage{
+	background-image: url(../images/products/imperial_heritage.jpg);
+	background-size: cover;
+}
+
+#product-sovereign-select{
+	background-image: url(../images/products/sovereign_select.jpg);
+	background-size: cover;
+}
+
+.viewcatalog{
+	font-size: 1.25em;
+	text-decoration: none;
+	color: white;
+	background-color: black;
+	padding: 10px 10px 10px 10px;
+	border-radius: 10px;
+}
+
+.viewcatalog:hover{
+	background-color: #5F3B23;
+}

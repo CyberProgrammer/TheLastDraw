@@ -1,0 +1,174 @@
+@media only screen and (max-width: 650px) {
+	.content-row p, .content-row h1 {
+		font-size: 0.8rem !important;
+	}
+
+	.row-1{
+		min-height: 5% !important;
+		background-image: none !important;
+	}
+
+	.row-1 h1{
+		padding-bottom: 50%;
+	}
+}
+
+@media only screen and (max-width: 1350px) {
+	.sticky{
+		margin: -1px 0px 0px 0px;
+	}
+
+	#topbar{
+		display: none;
+	}
+
+	#content{
+		width: 100% !important;
+	}
+
+	.content-row{
+		margin-top: 20% !important;
+	}
+
+	.content-row p, .content-row h1 {
+		width: 60% !important;
+	}
+
+	.content-row img{
+		width: 60% !important;
+	}
+
+	.list-row{
+		min-width: 180px !important;
+	}
+
+	.last-row img{
+		padding-bottom: 25% !important;
+	}
+}
+
+@media only screen and (max-width: 1650px){
+	.row-1{
+		max-height: 1100px;
+	}
+}
+
+html, body, main, footer{
+	font-size: 0.9em !important;
+	font-family: 'Libre Caslon Text', serif;
+	margin: 0;
+	padding: 0;
+	min-width: 100%;
+}
+
+html{
+	height: 100%;
+}
+
+body{
+	min-height: 100%;
+}
+
+main{
+	display: flex;
+	justify-content: center;
+	min-height: 100vh;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#content{
+	color: white;
+	font-size: 1em;
+	background-color: #252525;
+	width: 100%;
+}
+
+#content div{
+	width: 100%;	
+}
+
+#content .reveal{
+	margin-bottom: 50%;
+}
+
+.reveal h1{
+	margin-bottom: 5%;
+}
+
+#content p{
+	font-size: 1.25em;
+}
+
+.row-1 h1{
+	font-size: 2rem;
+	width: 80%;
+	margin: auto;
+	text-align: center;
+}
+
+.foreground-leaf{
+	width: 40%;
+	height: auto;
+}
+
+.row-1{
+	min-height: 1500px;
+	background-image: url(../images/history/farm_blur.webp);
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+.row-1 h1{
+	padding-top: 15%;
+}
+
+.content-row{
+	margin-top: 25%;
+	margin-bottom: 25%;
+}
+
+.content-row p, .content-row h1{
+	width: 40%;
+	margin: auto;
+	padding: 10px;
+	text-align: left;
+}
+
+.content-row p{
+	height: auto;
+	line-height: 1.25rem;
+	word-spacing: 0.1rem;
+}
+
+.content-row img{
+	width: 40%;
+    margin: auto;
+    display: block;
+    margin-top: 3%;
+}
+
+.last-row{
+	padding-bottom: 50%;
+}
+
+/* Disable transition for motion sickness users	*/
+@media(prefers-reduced-motion){
+	.hidden{
+		transition: none;
+	}
+}
+
+.hidden{
+	opacity: 0;
+	filter: blur(5px);
+	transform: opacity 1s ease;
+}
+
+.show{
+	opacity: 1;
+	filter: blur(0);
+	transform: translateX(0);
+	transition: opacity 1.5s ease;
+}

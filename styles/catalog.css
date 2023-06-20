@@ -1,0 +1,155 @@
+@font-face {
+    font-family: 'Libre Caslon Text';
+    font-display: block;
+    src: url('fonts/WOFF/librecaslontext-regular.woff2') format('woff2'),
+         url('fonts/WOFF/librecaslontext-regular.woff') format('woff');
+    src: local('Libre Caslon Text'), url('fonts/WOFF/librecaslontext-regular.woff') format('woff'), url('fonts/WOFF/librecaslontext-regular.woff2') format('woff2') ;
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@media only screen and (max-width: 650px) {
+	#nav-bar{
+		top: 0;
+		border: none;	
+	}
+
+	.row-1{
+		width: 90% !important;
+	}
+
+	#content{
+		width: 100% !important;
+	}
+
+	#content p {
+		width: 100% !important;
+	}
+
+	.product{
+		width: 50% !important;
+	}
+}
+
+@media only screen and (max-width: 1000px) {
+	.content_mobile{
+		display: initial !important;
+	}
+
+	.product_row_desktop{
+		display: none !important;
+	}
+
+	.product{
+		width: 40% !important;
+	}
+}
+
+@media only screen and (max-width: 1350px) {
+	.sticky{
+		margin: -1px 0px 0px 0px;
+	}
+
+	#topbar{
+		display: none;
+	}
+
+	.list-row{
+		min-width: 180px !important;
+	}
+
+	
+}
+
+
+html, body, main, footer{
+	font-size: 0.9em !important;
+	font-family: 'Libre Caslon Text', serif;
+	margin: 0;
+	padding: 0;
+	min-width: 100%;
+}
+
+html{
+	height: 100%;
+}
+
+body{
+	min-height: 100%;
+}
+
+main{
+	display: flex;
+	justify-content: center;
+	min-height: 100vh;
+	background-image: url(../images/smoke.jpg);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#content{
+	padding-top: 5%;
+	padding-bottom: 10%;
+	font-size: 1em;
+	background-color: white;
+	width: 80%;
+	white-space: pre-line;
+}
+
+.content_mobile{
+	display: none;
+	padding-top: 5%;
+	font-size: 1em;
+	background-color: darkgray;
+	width: 80%;
+	white-space: pre-line;
+}
+
+.row{
+	text-align: center;
+}
+
+.row h2{
+	margin-left: 10%;
+}
+
+.product_row_desktop{
+	display: flex;
+	justify-content: center;
+	margin-top: 10%;
+}
+
+.product_row_mobile{
+	display: flex;
+	justify-content: center;
+	margin-top: 10%;
+}
+
+
+.product{
+	width: 25%;
+	background-color: lightgrey;
+	text-align: center;
+	margin: 0px 15px 0px 15px;
+	border-radius: 10px;
+}
+
+.product img{
+	margin-bottom: 0px;
+	width: 50%;
+	height: auto;
+}
+
+.product p{
+	font-size: 0.9em;
+	text-align: center;
+	margin-top: 0px;
+}
+
+.product_details{
+	margin-top: 0px;
+	height: 40px;
+	background-color: white;
+}

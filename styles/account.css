@@ -1,0 +1,301 @@
+@font-face {
+    font-family: 'Libre Caslon Text';
+    font-display: block;
+    src: url('fonts/WOFF/librecaslontext-regular.woff2') format('woff2'),
+         url('fonts/WOFF/librecaslontext-regular.woff') format('woff');
+    src: local('Libre Caslon Text'), url('fonts/WOFF/librecaslontext-regular.woff') format('woff'), url('fonts/WOFF/librecaslontext-regular.woff2') format('woff2') ;
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@media only screen and (max-width: 650px) {
+	#nav-bar{
+		top: 0;
+		border: none;	
+	}
+
+	.row-1{
+		width: 90% !important;
+	}
+
+	#content{
+		width: 100% !important;
+	}
+
+	#content p {
+		width: 100% !important;
+	}
+
+	.row-account{
+		display: block !important;
+	}
+
+	.row-account h1{
+		width: 100% !important;
+	}
+
+	.image{
+		float: none !important;
+		width: 100% !important;
+	}
+
+	.contact-history{
+		display: none !important;
+	}
+}
+
+@media only screen and (max-width: 1000px) {
+	.cigar-row, .cigar-row-last{
+		height: 150px !important;
+	}
+}
+
+@media only screen and (max-width: 1350px) {
+	.sticky{
+		margin: -1px 0px 0px 0px;
+	}
+
+	#topbar{
+		display: none;
+	}
+
+	#content p {
+		width: 80%;
+	}
+
+	.list-row{
+		min-width: 180px !important;
+	}
+}
+
+
+html, body, main, footer{
+	font-size: 0.9em !important;
+	font-family: 'Libre Caslon Text', serif;
+	margin: 0;
+	padding: 0;
+	min-width: 100%;
+}
+
+html{
+	height: 100%;
+}
+
+body{
+	min-height: 100%;
+}
+
+main{
+	display: flex;
+	justify-content: center;
+	min-height: 100vh;
+	background-image: url(../images/smoke.jpg);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#content{
+	padding-top: 5%;
+	font-size: 1em;
+	background-color: white;
+	width: 80%;
+	white-space: pre-line;
+}
+
+.row{
+	text-align: left;
+}
+
+.row h1{
+	margin-left: 10%;
+}
+
+.menu-options{
+	display: flex;
+	width: 80%;
+	margin-left: 10%;
+	text-align: center;
+}
+
+.menu-options form{
+	width: auto;
+	margin-right: 2%;
+	background-color: white;
+	font-size: 1em;
+	border: none;
+}
+
+.active-option{
+	border-bottom: 3px solid black;
+}
+
+.settings{
+	display: flex;
+	width: 80%;
+	margin-left: 10%;
+	text-align: center;
+}
+
+
+.selection{
+	display: flex;
+	width: 100%;
+    margin-left: 10%;
+}
+
+.selection button{
+	width: 26.5%;
+	background-color: black;
+	color: white;
+}
+
+.db{
+	height: 500px;
+	width: 80% !important;
+    margin: auto;
+    text-align: center;
+    font-size: 1.25em;
+    overflow: auto;
+}
+
+.db .col-1{
+	width: 25%;
+}
+
+.db .col-2{
+	width: 50%;
+}
+
+.db .col-3{
+	width: 25%;
+}
+
+.db tr{
+	height: 100px;
+}
+
+.db tr:nth-child(even) {
+	background-color: Lightgrey;
+}
+
+
+
+
+/*
+	Account page details
+*/
+
+.row-account{
+	display: flex;
+}
+
+.row-account h1{
+	width: 50%;
+	text-align: center;
+}
+.profile{
+	border-radius: 50%;
+	object-fit: cover;
+	width: 125px;
+	height: 125px;
+}
+
+.details_label_row{
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+}
+
+.details_label_row label{
+	width: 50%;
+	text-align: center;
+}
+
+.details_input_row{
+	display: flex;
+	justify-content: space-around;
+	width: 100%;
+}
+
+.details_input_row input{
+	width: 30%;
+	border-radius: 5%;
+	text-align: right;
+}
+
+.logout_row{
+	text-align: center;
+}
+
+.logout_row input{
+	background-color: red;
+	color: white;
+}
+
+.image{
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+	width: 50%;
+	float: right;
+	text-align: center;
+	padding-bottom: 1%;
+}
+
+.image a{
+	text-decoration: none;
+	color: lightgrey;
+}
+
+.detail_buttons{
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	margin-left: 65%;
+	text-align: center;
+}
+
+.detail_buttons a{
+	width: 10%;
+	
+	color: black;
+}
+
+.accountBtn {
+	padding: 0% 2% 0% 2%;
+	color: white;
+	background-color: black;
+	border: 1px solid white;
+	border-radius: 15px;
+}
+
+.accountBtn:hover{
+	background-color: #5F3B23;
+}
+
+.detail_buttons .accountBtn{
+	margin-left:2.5%;
+}
+
+.upload::-webkit-file-upload-button{
+	margin-top: 5%;
+	padding: 0% 5% 0% 5%;
+	color: white;
+	background-color: black;
+	border: 1px solid white;
+	border-radius: 15px;
+}
+
+input[type="file"] {
+	width:105px;
+}
+
+.save_image{
+	color: white;
+	background-color: black;
+	border: 1px solid white;
+	border-radius: 15px;
+}
