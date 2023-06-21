@@ -1,4 +1,11 @@
 # TheLastDraw
+
+## Disclaimer Notice
+
+Although it could potentially be used for real-world applications with further development, please note that this website is primarily intended for demonstration purposes and serves as a showcase of my web development skills. It is not specifically designed or intended to be utilized for real-world transactions, e-commerce activities, or the storage of any important or sensitive information.
+
+By accessing or using this website, you acknowledge and agree that I shall not be held responsible or liable for any claims, damages, or losses arising from its use.
+
 ## Website Functionality
 
 The e-commerce website offers a wide range of features to cater to cigar enthusiasts. 
